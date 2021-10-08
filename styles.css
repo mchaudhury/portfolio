@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "", sans-serif;
+  font-family: cursive;
+}
+
+.homepage-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #0e042e;
+  height: 100vh;
+  background-image: linear-gradient(90deg, #002626, #a01717);
+  background-size: 300%;
+  animation: bg-animation 6s forwards;
+}
+
+nav {
+  animation: nav-load 1000ms 1s forwards;
+  opacity: 0;
+}
+
+.banner-header {
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 400;
+  animation: header-load 1000ms 1s forwards;
+  opacity: 0;
+}
+
+.learn-btn {
+  animation: btn-load 800ms 1s forwards;
+  opacity: 0;
+}
+
+.borderman {
+  display: inline-block;
+  position: relative;
+  margin: 2rem;
+  padding: 0.5em 1.5em;
+  border-radius: 3px;
+  transition: all 0.3s;
+  cursor: pointer;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.borderman.btn-border:before,
+.borderman.btn-border:after {
+  content: "";
+  border-style: solid;
+  position: absolute;
+  z-index: 5;
+  border-radius: 3px;
+  box-sizing: content-box;
+  transition: all 0.3s;
+}
+
+.borderman.btn-border:hover:after {
+  height: calc(100% + (2px * 2));
+  border-color: #f3a712;
+}
+
+.borderman.btn-border:before {
+  width: 0;
+  height: 100%;
+  border-width: 2px 0 2px 0;
+  top: -2px;
+  left: -2px;
+  transition-delay: 0.05s;
+}
+
+.borderman.btn-border:hover:before {
+  width: calc(100% + (2px * 2));
+  border-color: #f3a712;
+}
+
+.borderman.btn-border:hover {
+  color: #f3a712;
+}
+
+.borderman.btn-border.to-projects-btn:hover {
+  color: #f3a712;
+}
+
+.borderman.btn-border:after {
+  width: 100%;
+  height: 0;
+  border-width: 0 2px 0 2px;
+  top: -2px;
+  left: -2px;
+}
+
+.borderman.btn-border {
+  background-color: transparent;
+  border: 2px solid #d0e1d4;
+  color: #d0e1d4;
+  font-weight: 400;
+}
+
+.borderman.btn-border.to-projects-btn {
+  background-color: transparent;
+  border: 2px solid #000;
+  color: #000;
+  opacity: 0.7;
+}
+
+@keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+
+  100% {
+    background-position: right;
+  }
+}
+
+@keyframes header-load {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes btn-load {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes nav-load {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* About  */
+
+.about-me-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  text-align: left;
+  gap: 10%;
+  height: 100vh;
+  padding-right: 10rem;
+  padding-left: 10rem;
+  background-color: maroon;
+}
+
+.orange-text {
+  color: #ece0da;
+}
+
+.headshot {
+  width: 20rem;
+  height: 30rem;
+  min-width: 20rem;
+  min-height: 30rem;
+  border-radius: 10%;
+}
+
+.about-me-text {
+  font-size: 1.5rem;
+  opacity: 0.7;
+  text-decoration: none;
+  color: #000;
+}
+
+@media only screen and (max-width: 1150px) {
+  .about-me-container {
+    display: block;
+    height: auto;
+    text-align: center;
+  }
+
+  .headshot {
+    margin: 3rem auto;
+  }
+}
+
+/* Projects */
+
+.projects-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3%;
+  margin: 3rem;
+}
+
+.individual-project-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 20rem;
+}
+
+.about-project-contact-header {
+  font-size: 3rem;
+}
+
+.project-img {
+  height: 222px;
+  width: 435px;
+  min-width: 80%;
+  opacity: 0.8;
+}
+
+.project-img:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.title-text {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+/* Contact */
+
+.contact-container {
+  background-color: #002626;
+  color: #d0e1d4;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3rem;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  margin: 2rem;
+}

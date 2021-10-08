@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="icon" href="/images/favicon.ico" />
+    <title>Mushfiq Chaudry's Portfolio</title>
+  </head>
+
+  <body>
+    <div id="homepage" class="homepage-container">
+      <p class="banner-header">
+        Hello, My name is <span class="orange-text">Musfiq Chaudhury</span>, <br />a
+        Full Stack Software Developer with versatile skillsets such as HTML5,
+        CSS3, JavaScrpt and Node.js.
+      </p>
+      <a href="#about" class="borderman btn-border learn-btn"
+        >About Mushfiq Chaudhury</a
+      >
+    </div>
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#homepage">Mushfiq's Portfolio</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="#about">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div id="about" class="about-me-container">
+      <img
+        src="./images/profile-pic.jpeg"
+        alt="headshot"
+        class="headshot"
+        data-aos="fade-right"
+      />
+      <div data-aos="fade-left">
+        <p class="about-project-contact-header">
+          I'm a Full Stack<span class="orange-text"> Software Developer</span>.
+        </p>
+        <p class="about-me-text">
+          Currently I am enrolled at Devmountain learning Software Enngineering
+          with Java. I am a former teacher who loves learning and teaching with
+          a passion for web development. I love to engage myself with coding
+          challenges that allow me to push the boundary of my comfort zone.
+        </p>
+
+        <p class="about-me-text">
+          I am proficient in both front-end and back-end web develpment with
+          experience building web applications using HTML5, CSS3, JavaScript and
+          Node.js.
+        </p>
+        <a class="borderman btn-border to-projects-btn" href="#projects"
+          >View my projects</a
+        >
+      </div>
+    </div>
+
+    <div id="projects">
+      <div class="header-container">
+        <h2 class="about-project-contact-header">My Projects</h2>
+      </div>
+
+      <div class="projects-container">
+        <div data-aos="fade-right" class="individual-project-container">
+          <h5 class="title-text">TravelR App</h5>
+          <a href="https://vimeo.com/626153454" target="_blank"
+            ><img
+              class="project-img"
+              src="images/travelapp-pic.png"
+              alt="project pic"
+          /></a>
+        </div>
+
+        <div data-aos="fade-up" class="individual-project-container">
+          <h5 class="title-text">Color Generator</h5>
+          <a href="https://deployment-app-mo.herokuapp.com/" target="_blank"
+            ><img
+              class="project-img"
+              src="./images/colorgenerator-pic.png"
+              alt="project pic"
+          /></a>
+        </div>
+
+        <!-- <div data-aos="fade-left" class="individual-project-container">
+          <h5 class="title-text">Simon</h5>
+          <a href="https://carter-walsh.github.io/Simon-Game/" target="_blank"
+            ><img
+              class="project-img"
+              src="./images/simon-game.png"
+              alt="project pic"
+          /></a>
+        </div> -->
+      </div>
+    </div>
+
+    <div id="contact" class="contact-container">
+      <div class="header-container">
+        <p class="about-project-contact-header">Contact</p>
+        <p>
+          I would love to discuss with you about programming. Let's connect!
+        </p>
+      </div>
+      <div data-aos="fade-down" data-aos-offset="70" class="logo-container">
+        <a
+          href="https://www.linkedin.com/in/mchaudhury"
+          target="_blank"
+          class="borderman btn-border"
+          >LinkedIn</a
+        >
+        <a
+          href="https://github.com/mchaudhury"
+          target="_blank"
+          class="borderman btn-border"
+          >GitHub</a
+        >
+        <!-- <a
+          href="https://docs.google.com/document/d/1NL3raF1tfo7Hfn3Mkk7lEhF0WeW5YMJDHJJa9fOXXmI/edit?usp=sharing"
+          target="_blank"
+          class="borderman btn-border"
+          >Resume</a
+        > -->
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 200,
+        duration: 1000,
+      });
+    </script>
+  </body>
+</html>
